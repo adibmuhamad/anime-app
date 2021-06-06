@@ -35,5 +35,5 @@ class Movie {
         startDate = json['start_date'] == null ? '' : json['start_date'],
         endDate = json['end_date'] == null ? '' : json['end_date'],
         member = json['members'] == null ? 0 : json['members'],
-        score = json['score'] == 0 ? 0.0 : json['score'];
+        score = json['score'] == null ? 0.0 : json['score'].toDouble();
 }
